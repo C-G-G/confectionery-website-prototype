@@ -52,7 +52,7 @@ header h1 {
 
 header li {
   list-style-type: none;
-  border: .8px solid #000;
+  border: .05em solid #000; /* BETTER TO USE EM FOR BORDER TOO? .8px */
 }
 
 header nav a {
