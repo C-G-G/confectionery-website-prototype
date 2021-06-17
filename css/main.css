@@ -52,7 +52,7 @@ header h1 {
 
 header li {
   list-style-type: none;
-  border: .05em solid #000; /* BETTER TO USE EM FOR BORDER TOO? .8px */
+  border: .05em solid #000; /* BETTER TO USE EM FOR BORDER TOO? */
 }
 
 header nav a {
@@ -154,7 +154,7 @@ footer {
   margin-top: 5em;
 }
 
-@media only screen and (min-width: 25em) { /* 400px */
+@media only screen and (min-width: 25em) { /* 400 */
 
   html {
     font-size: 100%;
@@ -176,7 +176,7 @@ footer {
 
 }
 
-@media only screen and (min-width: 38em) { /* 608px */
+@media only screen and (min-width: 38em) { /* 608 */
 
   html {
     font-size: 110%;
@@ -218,7 +218,7 @@ footer {
 
 }
 
-@media only screen and (min-width: 60em) { /* 960px */
+@media only screen and (min-width: 60em) { /* 960 */
 
   html {
     font-size: 120%;
@@ -292,7 +292,7 @@ footer {
 
 }
 
-@media only screen and (min-width: 90em) { /* 1440px */
+@media only screen and (min-width: 90em) { /* 1440 */
 
   html {
     font-size: 130%;
