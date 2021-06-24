@@ -25,6 +25,7 @@ body {
 
 header img {
   padding-left: .5em;
+  padding-right: .5em;
 }
 
 .img-flex {
@@ -78,16 +79,19 @@ li {
 }
 
 h2 {
-  margin-top: 0;
+  margin-top: .8em;
+  margin-bottom: .5em;
   margin-left: .5em;
+}
+
+.intro-text p {
+  margin-top: 0;
+  margin-right: .5em;
 }
 
 .seasonal h3 {
   margin-left: .5em;
 }
-
-/* TRIED CENTERING ELEMENTS SOLUTIONS ON CSS LAYOUT CHEAT SHEET */
-/* HOW CAN I CENTER UL ELEMENTS (.seasonal ul BOXES) ON THE PAGE????? */
 
 header h3, header p {
   margin-left: .8em;
@@ -96,7 +100,8 @@ header h3, header p {
 main {
   padding-top: 2em;
   padding-bottom: 2em;
-  margin-left: 1em;
+  margin-left: .5em;
+  margin-right: .5em;
 }
 
 .season-item {
@@ -106,8 +111,9 @@ main {
 
 .season-item p:first-child {
   position: absolute;
-  top: 10em;
-  right: 1em;
+  top: 12em;
+  right: 0;
+  /* right: 1em; */
   background-color: #000;
   color: #fff;
   padding: .1em;
@@ -116,7 +122,7 @@ main {
 .season-item p:nth-child(2) {
   position: absolute;
   top: 14em;
-  left: 1em;
+  /* left: 1em; */
   background-color: #999;
   color: #fff;
   padding: .1em;
@@ -166,12 +172,15 @@ footer {
   }
 
   .season-item p:first-child {
-    top: 13em;
+    top: 16em;
+    right: 0;
+    font-size: 120%;
   }
 
   .season-item p:nth-child(2) {
-    top: 20em;
-    left: 2em;
+    top: 16em;
+    left: 0;
+    font-size: 120%;
   }
 
 }
@@ -183,7 +192,9 @@ footer {
     line-height: 1.4;
   }
 
-  /* HOW CAN STRETCH NAV ACROSS THE PAGE ??????????????????????????? */
+  header li {
+    flex-basis: 20%; /* allows nav to stretch across page */
+  }
 
   nav ul {
     display: flex;
@@ -200,20 +211,22 @@ footer {
   .seasonal ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .season-item {
     width: 45%;
-    margin-left: 1em;
+    margin: .3em;
   }
 
   .season-item p:first-child {
     top: 6em;
+    left: 0;
   }
 
   .season-item p:nth-child(2) {
-    top: 11em;
-    left: 2em;
+    top: 8em;
+    left: 0;
   }
 
 }
@@ -241,6 +254,16 @@ footer {
     width: 100%;
   }
 
+  .intro h2 {
+    position: absolute;
+    top: 15em;
+    left: 20em;
+    margin-left: 0;
+    color: #000;
+    background-color: #fff;
+    padding: .4em;
+  }
+
   .intro h3 {
     position: absolute;
     top: 20em;
@@ -255,6 +278,7 @@ footer {
     position: absolute;
     top: 27em;
     left: 20em;
+    margin-top: .5em;
     margin-left: 0;
     width: 28em;
     color: #fff;
@@ -290,6 +314,33 @@ footer {
     margin-right: .8em;
   }
 
+  .address-phone {
+    float: left;
+    text-align: center;
+  }
+
+  .days-hours {
+    float: right;
+    padding-top: 0;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  /* .days-hours p:first-child {
+    padding-top: 0;
+    margin-top: 0;
+  } */
+
+  .contact-us {
+    overflow: hidden;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+
+  .contact-us br {
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width: 90em) { /* 1440 */
@@ -298,10 +349,14 @@ footer {
     font-size: 130%;
   }
 
+  .intro h2 {
+    top: 20em;
+    left: 30em;
+  }
+
   .intro h3 {
     top: 25em;
-    left: 28em;
-    padding: .4em;
+    left: 30em;
   }
 
   .intro p {
@@ -332,6 +387,11 @@ footer {
 
   .chocolatiers ul li {
     margin-right: 2.5em;
+  }
+
+  .contact-us {
+    padding-left: 15em;
+    padding-right: 15em;
   }
 
 }
